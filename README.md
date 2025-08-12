@@ -1,12 +1,78 @@
-# React + Vite
+# Kanban Board Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Kanban board application built with Vite, featuring drag-and-drop functionality and real-time status updates.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Drag and drop cards between columns
+- Search functionality for tasks
+- Color-coded status columns
+- Developer avatars
+- Task type indicators
+- Real-time card count per column
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- Tailwind CSS
+- DND Kit for drag-and-drop
+- Axios for API calls
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+
+## Installation
+
+1. Clone the repository:
+```sh
+git clone <repository-url>
+cd test-kanban
+```
+
+2. Install dependencies:
+```sh
+npm install
+```
+
+3. Start the development server:
+```sh
+npm run dev
+```
+
+4. Open your browser and visit:
+```
+http://localhost:5173
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+test-kanban/
+├── src/
+│   ├── KanbanBoard/
+│   │   ├── Kanban.jsx
+│   │   └── KanbanType.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── index.html
+└── package.json
+```
+
+## API Integration
+
+The project fetches data from:
+```
+https://mocki.io/v1/282222c9-43cf-4d92-9ba0-0e0d1447f403
+```
